@@ -8,12 +8,10 @@
     },
     "files": [
         "README.md",
-        "main.blocks",
-        "main.ts"
+        "hoc2023.ts",
+        "FourDirectionArrows.jres"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
+    "testFiles": [],
     "public": true,
     "targetVersions": {
         "target": "1.7.11",
@@ -22,5 +20,5 @@
     "supportedTargets": [
         "minecraft"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
