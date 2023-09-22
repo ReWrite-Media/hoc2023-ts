@@ -25,23 +25,24 @@ namespace hoc2023 {
      */
     //% block="cut grass"
     export function scene2_GrassCut(): void {
-        player.execute("scoreboard players set scene2a output 1")
+        player.execute("scoreboard players set .output global 1")
     }
     /**
      * Check for sprinkler before cutting
      */
     //% block="cut grass if no sprinkler"
     export function scene2_CheckSprinklerGrassCut(): void {
-        player.execute("scoreboard players set scene2a output 2")
+        player.execute("scoreboard players set .output global 2")
     }
     /**
      * Move lawnmower to next row
      */
     //% block="start next row"
     export function scene2_LawnmowerNextRow(): void{
-        agent.move(FORWARD, 1)
         pause()
-        player.execute("scoreboard players add scene2b output 1")
+        player.execute("scoreboard players set .output global 3")
+        pause()
+        player.execute("scoreboard players set .output global 4")
     }
     /**
      * Move lawnmower forward
@@ -49,7 +50,7 @@ namespace hoc2023 {
     //% block="move lawnmower forward"
     export function scene2_LawnmowerMoveForward(): void{
         pause()
-        agent.move(FORWARD, 1)
+        player.execute("scoreboard players set .output global 3")
     }
 
     //helper functions
