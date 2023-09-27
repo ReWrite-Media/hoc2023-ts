@@ -90,9 +90,7 @@ namespace hoc2023 {
      */
     //% block="start next row"
     export function scene2_LawnmowerNextRow(): void{
-        pause()
         player.execute("scoreboard players set .output global 3")
-        pause()
         player.execute("scoreboard players set .output global 4")
     }
     /**
@@ -100,7 +98,6 @@ namespace hoc2023 {
      */
     //% block="move lawnmower forward"
     export function scene2_LawnmowerMoveForward(): void {
-        pause()
         player.execute("scoreboard players set .output global 3")
     }
 
