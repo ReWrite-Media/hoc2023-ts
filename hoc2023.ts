@@ -14,6 +14,17 @@ enum FourDirectionArrows {
     ArrowLeftBlue = 983
 }
 
+enum Scene1_Scan {
+    //% block="horizontally"
+    Horizontally = 1,
+    //% block="up"
+    Up = 2,
+    //% block="down"
+    Down = 3,
+    //% block="smart"
+    Smart = 4
+}
+
 // global variables
 const communicationsTimeout = 100;
 
@@ -37,19 +48,16 @@ namespace hoc2023 {
     }
 
     /**
-     * Scan horizontally for student
+     * Scan for student
      */
-    //% block="scan horizontally"
-    export function scene1_ScanHorizontally(): void {
-        player.execute("scoreboard players set .output global 1")
-    }
-
-    /**
-     * Smart scan for student
-     */
-    //% block="smart scan"
-    export function scene1_SmartScan(): void {
-        player.execute("scoreboard players set .output global 2")
+    //% block="scan %scan_type"
+    export function scene1_Scan(scan_type: Scene1_Scan): void {
+        if (scan_type = Scene1_Scan.Smart) {
+            player.execute("scoreboard players set .output global 2")
+        } else{
+            player.execute("scoreboard players set .output global 1")
+        }
+        
     }
 
     /**
