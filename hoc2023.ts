@@ -20,7 +20,53 @@ const communicationsTimeout = 100;
 //%  block="HOC 2023" weight=200 color=#0B3D91 icon="\uf186"
 namespace hoc2023 {
 
+    /**
+     * loop during lunch time
+     */
+    //% block="lunch time"
+    export function scene1_LunchTime(): boolean {
+        return true;
+    }
 
+    /**
+     * Detect Student
+     */
+    //% block="student found"
+    export function scene1_DetectStudent(): boolean {
+        return true;
+    }
+
+    /**
+     * Scan horizontally for student
+     */
+    //% block="scan horizontally"
+    export function scene1_ScanHorizontally(): void {
+        player.execute("scoreboard players set .output global 1")
+    }
+
+    /**
+     * Smart scan for student
+     */
+    //% block="smart scan"
+    export function scene1_SmartScan(): void {
+        player.execute("scoreboard players set .output global 2")
+    }
+
+    /**
+     * Serve Lunch
+     */
+    //% block="serve lunch"
+    export function scene1_ServeLunch(): void {
+        player.execute("scoreboard players set .output global 3")
+    }
+
+    /**
+     * Wait for next student
+     */
+    //% block="wait for next student"
+    export function scene1_WaitStudent(): void {
+        player.execute("scoreboard players set .output global 4")
+    }
     /**
      * Cut grass without checking
      */
