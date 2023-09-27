@@ -17,10 +17,6 @@ enum FourDirectionArrows {
 enum Scene1_Scan {
     //% block="horizontally"
     Horizontally = 1,
-    //% block="up"
-    Up = 2,
-    //% block="down"
-    Down = 3,
     //% block="smart"
     Smart = 4
 }
@@ -52,7 +48,7 @@ namespace hoc2023 {
      */
     //% block="scan %scan_type"
     export function scene1_Scan(scan_type: Scene1_Scan): void {
-        if (scan_type = Scene1_Scan.Smart) {
+        if (scan_type == Scene1_Scan.Smart) {
             player.execute("scoreboard players set .output global 2")
         } else{
             player.execute("scoreboard players set .output global 1")
