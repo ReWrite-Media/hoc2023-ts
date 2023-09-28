@@ -105,7 +105,7 @@ namespace hoc2023 {
      * Checks for human detection
      */
     //% block="human detected"
-    export function scene3_HumanDetected(): boolean {
+    export function scene4_HumanDetected(): boolean {
         return true;
     }
 
@@ -113,7 +113,7 @@ namespace hoc2023 {
     * Checks is user is authorized
     */
     //% block="user authorized"
-    export function scene3_UserAuthorized(): boolean {
+    export function scene4_UserAuthorized(): boolean {
         return true;
     }
 
@@ -121,7 +121,7 @@ namespace hoc2023 {
     * Return user permissions
     */
     //% block="user permissions"
-    export function scene3_UserPermissions(): boolean {
+    export function scene4_UserPermissions(): boolean {
         return true;
     }
 
@@ -129,7 +129,7 @@ namespace hoc2023 {
     * Check if door closed
     */
     //% block="door closed"
-    export function scene3_DoorClosed(): boolean {
+    export function scene4_DoorClosed(): boolean {
         return true;
     }
 
@@ -137,7 +137,7 @@ namespace hoc2023 {
     * User admin permissions
     */
     //% block="admin"
-    export function scene3_Admin(): boolean {
+    export function scene4_Admin(): boolean {
         return false;
     }
 
@@ -145,7 +145,7 @@ namespace hoc2023 {
      * Check user permissions
      */
     //% block="check user permissions"
-    export function scene3_CheckUserPermissions(): void {
+    export function scene4_CheckUserPermissions(): void {
         player.execute("scoreboard players set .output global 5")
     }
 
@@ -153,7 +153,7 @@ namespace hoc2023 {
      * Enable log viewing
      */
     //% block="enable log viewing"
-    export function scene3_EnableLogViewing(): void {
+    export function scene4_EnableLogViewing(): void {
         player.execute("scoreboard players set .output global 1")
     }
 
@@ -161,7 +161,7 @@ namespace hoc2023 {
      * Disable log viewing
      */
     //% block="disable log viewing"
-    export function scene3_DisableLogViewing(): void {
+    export function scene4_DisableLogViewing(): void {
         player.execute("scoreboard players set .output global 2")
     }
 
@@ -169,7 +169,7 @@ namespace hoc2023 {
      * Log unauthorized event
      */
     //% block="log unauthorized event"
-    export function scene3_LogUnauthorizedEvent(): void {
+    export function scene4_LogUnauthorizedEvent(): void {
         player.execute("scoreboard players set .output global 5")
     }
 
@@ -177,7 +177,7 @@ namespace hoc2023 {
      * Log authorized event
      */
     //% block="log authorized event"
-    export function scene3_LogAuthorizedEvent(): void {
+    export function scene4_LogAuthorizedEvent(): void {
         player.execute("scoreboard players set .output global 5")
     }
 
@@ -185,7 +185,7 @@ namespace hoc2023 {
      * Lock door
      */
     //% block="lock door"
-    export function scene3_LockDoor(): void {
+    export function scene4_LockDoor(): void {
         player.execute("scoreboard players set .output global 5")
     }
 
@@ -193,7 +193,7 @@ namespace hoc2023 {
      * Unlock door
      */
     //% block="unlock door"
-    export function scene3_UlockDoor(): void {
+    export function scene4_UnlockDoor(): void {
         player.execute("scoreboard players set .output global 5")
     }
 
@@ -201,7 +201,7 @@ namespace hoc2023 {
      * Wait before locking
      */
     //% block="wait %num minutes"
-    export function scene3_WaitMinutes(num: number): void {
+    export function scene4_WaitMinutes(num: number): void {
         player.execute("scoreboard players set .output global 5")
     }
 
