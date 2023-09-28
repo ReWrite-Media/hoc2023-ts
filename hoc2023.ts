@@ -136,7 +136,7 @@ namespace hoc2023 {
     /**
     * User admin permissions
     */
-    //% block="user admin"
+    //% block="admin"
     export function scene4_UserAdmin(): boolean {
         return true;
     }
