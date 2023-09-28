@@ -159,7 +159,7 @@ namespace hoc2023 {
      */
     //% block="check user permissions"
     export function scene4_CheckUserPermissions(): void {
-        player.execute("scoreboard players set .output global 5")
+        player.execute("scoreboard players set .output global 3")
     }
 
     /**
@@ -199,7 +199,7 @@ namespace hoc2023 {
      */
     //% block="lock door"
     export function scene4_LockDoor(): void {
-        player.execute("scoreboard players set .output global 5")
+        player.execute("scoreboard players set .output global 7")
     }
 
     /**
@@ -207,7 +207,7 @@ namespace hoc2023 {
      */
     //% block="unlock door"
     export function scene4_UnlockDoor(): void {
-        player.execute("scoreboard players set .output global 5")
+        player.execute("scoreboard players set .output global 4")
     }
 
     /**
@@ -215,7 +215,7 @@ namespace hoc2023 {
      */
     //% block="wait %num minutes"
     export function scene4_WaitMinutes(num: number): void {
-        player.execute("scoreboard players set .output global 5")
+        player.execute("scoreboard players set .output global 6")
     }
 
     //helper functions
