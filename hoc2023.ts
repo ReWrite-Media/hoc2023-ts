@@ -21,6 +21,15 @@ enum Scene1_Scan {
     Smart = 4
 }
 
+enum Scene4_UserLevel {
+    //% block="anyone"
+    Anyone,
+    //% block="user"
+    User,
+    //% block="admin"
+    Admin
+}
+
 // global variables
 const communicationsTimeout = 100;
 
@@ -50,10 +59,10 @@ namespace hoc2023 {
     export function scene1_Scan(scan_type: Scene1_Scan): void {
         if (scan_type == Scene1_Scan.Smart) {
             player.execute("scoreboard players set .output global 2")
-        } else{
+        } else {
             player.execute("scoreboard players set .output global 1")
         }
-        
+
     }
 
     /**
@@ -89,7 +98,7 @@ namespace hoc2023 {
      * Move lawnmower to next row
      */
     //% block="start next row"
-    export function scene2_LawnmowerNextRow(): void{
+    export function scene2_LawnmowerNextRow(): void {
         player.execute("scoreboard players set .output global 3")
         player.execute("scoreboard players set .output global 4")
     }
@@ -136,9 +145,13 @@ namespace hoc2023 {
     /**
     * User admin permissions
     */
-    //% block="admin"
-    export function scene4_UserAdmin(): boolean {
-        return true;
+    //% block="permission %permission"
+    export function scene4_UserAdmin(permission: Scene4_UserLevel): boolean {
+        if (permission == Scene4_UserLevel.Admin) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
     /**
@@ -207,7 +220,7 @@ namespace hoc2023 {
 
     //helper functions
 
-    function pause(): void{
+    function pause(): void {
         loops.pause(communicationsTimeout)
     }
 }
