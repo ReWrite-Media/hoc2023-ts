@@ -138,7 +138,7 @@ namespace hoc2023 {
     */
     //% block="admin"
     export function scene4_Admin(): boolean {
-        return false;
+        return true;
     }
 
     /**
