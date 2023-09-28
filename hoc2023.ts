@@ -145,7 +145,7 @@ namespace hoc2023 {
     /**
     * User admin permissions
     */
-    //% block="permission %permission"
+    //% block="%permission"
     export function scene4_UserAdmin(permission: Scene4_UserLevel): boolean {
         if (permission == Scene4_UserLevel.Admin) {
             return false;
