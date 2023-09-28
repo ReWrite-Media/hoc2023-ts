@@ -201,7 +201,7 @@ namespace hoc2023 {
      * Wait before locking
      */
     //% block="wait %num minutes"
-    export function scene3_WaitMinutes(num: Number): void {
+    export function scene3_WaitMinutes(num: number): void {
         player.execute("scoreboard players set .output global 5")
     }
 
