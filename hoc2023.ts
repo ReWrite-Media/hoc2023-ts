@@ -28,7 +28,7 @@ const communicationsTimeout = 100;
 namespace hoc2023 {
 
     /**
-     * loop during lunch time
+     * Loop during lunch time
      */
     //% block="lunch time"
     export function scene1_LunchTime(): boolean {
@@ -99,6 +99,110 @@ namespace hoc2023 {
     //% block="move lawnmower forward"
     export function scene2_LawnmowerMoveForward(): void {
         player.execute("scoreboard players set .output global 3")
+    }
+
+    /**
+     * Checks for human detection
+     */
+    //% block="human detected"
+    export function scene3_HumanDetected(): boolean {
+        return true;
+    }
+
+    /**
+    * Checks is user is authorized
+    */
+    //% block="user authorized"
+    export function scene3_UserAuthorized(): boolean {
+        return true;
+    }
+
+    /**
+    * Return user permissions
+    */
+    //% block="user permissions"
+    export function scene3_UserPermissions(): boolean {
+        return true;
+    }
+
+    /**
+    * Check if door closed
+    */
+    //% block="door closed"
+    export function scene3_DoorClosed(): boolean {
+        return true;
+    }
+
+    /**
+    * User admin permissions
+    */
+    //% block="admin"
+    export function scene3_Admin(): boolean {
+        return false;
+    }
+
+    /**
+     * Check user permissions
+     */
+    //% block="check user permissions"
+    export function scene3_CheckUserPermissions(): void {
+        player.execute("scoreboard players set .output global 5")
+    }
+
+    /**
+     * Enable log viewing
+     */
+    //% block="enable log viewing"
+    export function scene3_EnableLogViewing(): void {
+        player.execute("scoreboard players set .output global 1")
+    }
+
+    /**
+     * Disable log viewing
+     */
+    //% block="disable log viewing"
+    export function scene3_DisableLogViewing(): void {
+        player.execute("scoreboard players set .output global 2")
+    }
+
+    /**
+     * Log unauthorized event
+     */
+    //% block="log unauthorized event"
+    export function scene3_LogUnauthorizedEvent(): void {
+        player.execute("scoreboard players set .output global 5")
+    }
+
+    /**
+     * Log authorized event
+     */
+    //% block="log authorized event"
+    export function scene3_LogAuthorizedEvent(): void {
+        player.execute("scoreboard players set .output global 5")
+    }
+
+    /**
+     * Lock door
+     */
+    //% block="lock door"
+    export function scene3_LockDoor(): void {
+        player.execute("scoreboard players set .output global 5")
+    }
+
+    /**
+     * Unlock door
+     */
+    //% block="unlock door"
+    export function scene3_UlockDoor(): void {
+        player.execute("scoreboard players set .output global 5")
+    }
+
+    /**
+     * Wait before locking
+     */
+    //% block="wait %num minutes"
+    export function scene3_WaitMinutes(num: Number): void {
+        player.execute("scoreboard players set .output global 5")
     }
 
     //helper functions
