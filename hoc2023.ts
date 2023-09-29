@@ -31,7 +31,7 @@ enum Scene4_UserLevel {
 }
 
 // global variables
-const communicationsTimeout = 100;
+const communicationsTimeout = 50;
 
 //%  block="HOC 2023" weight=200 color=#0B3D91 icon="\uf186"
 namespace hoc2023 {
@@ -99,7 +99,9 @@ namespace hoc2023 {
      */
     //% block="start next row"
     export function scene2_LawnmowerNextRow(): void {
+        pause()
         player.execute("scoreboard players set .output global 3")
+        pause()
         player.execute("scoreboard players set .output global 4")
     }
     /**
