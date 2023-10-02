@@ -85,6 +85,7 @@ namespace hoc2023 {
      */
     //% block="cut grass"
     export function scene2_GrassCut(): void {
+        pause()
         player.execute("scoreboard players set .output global 1")
     }
     /**
@@ -92,6 +93,7 @@ namespace hoc2023 {
      */
     //% block="cut grass if no sprinkler"
     export function scene2_CheckSprinklerGrassCut(): void {
+        pause()
         player.execute("scoreboard players set .output global 2")
     }
     /**
@@ -109,6 +111,7 @@ namespace hoc2023 {
      */
     //% block="move lawnmower forward"
     export function scene2_LawnmowerMoveForward(): void {
+        pause()
         player.execute("scoreboard players set .output global 3")
     }
 
