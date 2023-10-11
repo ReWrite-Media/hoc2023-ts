@@ -232,50 +232,6 @@ namespace hoc2023 {
     }
 
     /**
-     * Move red Agent
-     */
-    //% block="red agent move %d by %n"
-    export function scene5_RedAgent(d: FourDirectionArrows, n: number): void {
-        pause()
-        switch (d) {
-            case FourDirectionArrows.ArrowUpOrange:
-                player.execute("scoreboard players set .output global 11")
-                break;
-            case FourDirectionArrows.ArrowDownMagenta:
-                player.execute("scoreboard players set .output global 12")
-                break;
-            case FourDirectionArrows.ArrowRightYellow:
-                player.execute("scoreboard players set .output global 13")
-                break;
-            case FourDirectionArrows.ArrowLeftBlue:
-                player.execute("scoreboard players set .output global 14")
-                break;
-        }
-    }
-
-    /**
-     * Move yellow Agent
-     */
-    //% block="yellow agent move %d by %n"
-    export function scene5_YellowAgent(d: FourDirectionArrows, n: number): void {
-        pause()
-        switch (d) {
-            case FourDirectionArrows.ArrowUpOrange:
-                player.execute("scoreboard players set .output global 21")
-                break;
-            case FourDirectionArrows.ArrowDownMagenta:
-                player.execute("scoreboard players set .output global 22")
-                break;
-            case FourDirectionArrows.ArrowRightYellow:
-                player.execute("scoreboard players set .output global 23")
-                break;
-            case FourDirectionArrows.ArrowLeftBlue:
-                player.execute("scoreboard players set .output global 24")
-                break;
-        }
-    }
-
-    /**
      * Move blue Agent
      */
     //% block="blue agent move %d by %n"
@@ -297,28 +253,6 @@ namespace hoc2023 {
         }
     }
 
-    /**
-     * Move green Agent
-     */
-    //% block="green agent move %d by %n"
-    export function scene5_GreenAgent(d: FourDirectionArrows, n: number): void {
-        pause()
-        switch (d) {
-            case FourDirectionArrows.ArrowUpOrange:
-                player.execute("scoreboard players set .output global 41")
-                break;
-            case FourDirectionArrows.ArrowDownMagenta:
-                player.execute("scoreboard players set .output global 42")
-                break;
-            case FourDirectionArrows.ArrowRightYellow:
-                player.execute("scoreboard players set .output global 43")
-                break;
-            case FourDirectionArrows.ArrowLeftBlue:
-                player.execute("scoreboard players set .output global 44")
-                break;
-        }
-    }
-
     //helper functions
 
     function pause(): void {
@@ -327,7 +261,7 @@ namespace hoc2023 {
 
 }
 
-//%  block="HOC 2023 Red Agent" weight=200 color=#ff0000 icon="\uf186"
+//%  block="HOC 2023 Red Agent" weight=200 color=#7e463c icon="\uf186"
 namespace hoc2023RedAgent {
     /**
      * Move red Agent
@@ -354,3 +288,60 @@ namespace hoc2023RedAgent {
         loops.pause(communicationsTimeout)
     }
 }
+
+//%  block="HOC 2023 Green Agent" weight=200 color=#b99b18 icon="\uf186"
+namespace hoc2023GreenAgent {
+    /**
+     * Move green Agent
+     */
+    //% block="green agent move %d by %n"
+    export function scene5_GreenAgent(d: FourDirectionArrows, n: number): void {
+        pause()
+        switch (d) {
+            case FourDirectionArrows.ArrowUpOrange:
+                player.execute("scoreboard players set .output global 41")
+                break;
+            case FourDirectionArrows.ArrowDownMagenta:
+                player.execute("scoreboard players set .output global 42")
+                break;
+            case FourDirectionArrows.ArrowRightYellow:
+                player.execute("scoreboard players set .output global 43")
+                break;
+            case FourDirectionArrows.ArrowLeftBlue:
+                player.execute("scoreboard players set .output global 44")
+                break;
+        }
+    }
+    function pause(): void {
+        loops.pause(communicationsTimeout)
+    }
+}
+
+//%  block="HOC 2023 YellowAgent" weight=200 color=#b99b18 icon="\uf186"
+namespace hoc2023YellowAgent {
+    /**
+     * Move yellow Agent
+     */
+    //% block="yellow agent move %d by %n"
+    export function scene5_YellowAgent(d: FourDirectionArrows, n: number): void {
+        pause()
+        switch (d) {
+            case FourDirectionArrows.ArrowUpOrange:
+                player.execute("scoreboard players set .output global 21")
+                break;
+            case FourDirectionArrows.ArrowDownMagenta:
+                player.execute("scoreboard players set .output global 22")
+                break;
+            case FourDirectionArrows.ArrowRightYellow:
+                player.execute("scoreboard players set .output global 23")
+                break;
+            case FourDirectionArrows.ArrowLeftBlue:
+                player.execute("scoreboard players set .output global 24")
+                break;
+        }
+    }
+    function pause(): void {
+        loops.pause(communicationsTimeout)
+    }
+}
+
