@@ -216,7 +216,7 @@ namespace hoc2023 {
 
 }
 
-//%  block="HOC 2023 Objectives" weight=200 color=#6d682b icon="\uf186"
+//%  block="HOC 2023 Objectives" weight=200 color=#9f8c1c icon="\uf186"
 namespace hoc2023Objectives {
     /**
      * Agent Move Direction
