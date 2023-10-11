@@ -232,7 +232,7 @@ namespace hoc2023Objectives {
      */
     //% block="agent place `block.PinkWool` %d"
     export function pillar_AgentPlacePinkWoolBlock(d: UpDown): void {
-        agent.setItem(PINK_WOOL, 1, 1)
+        agent.setItem(PURPLE_WOOL, 1, 1)
         agent.setSlot(1)
         agent.place(d)
     }
