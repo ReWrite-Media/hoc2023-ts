@@ -231,28 +231,6 @@ namespace hoc2023 {
         player.execute("scoreboard players set .output global 6")
     }
 
-    /**
-     * Move blue Agent
-     */
-    //% block="blue agent move %d by %n"
-    export function scene5_BlueAgent(d: FourDirectionArrows, n: number): void {
-        pause()
-        switch (d) {
-            case FourDirectionArrows.ArrowUpOrange:
-                player.execute("scoreboard players set .output global 31")
-                break;
-            case FourDirectionArrows.ArrowDownMagenta:
-                player.execute("scoreboard players set .output global 32")
-                break;
-            case FourDirectionArrows.ArrowRightYellow:
-                player.execute("scoreboard players set .output global 33")
-                break;
-            case FourDirectionArrows.ArrowLeftBlue:
-                player.execute("scoreboard players set .output global 34")
-                break;
-        }
-    }
-
     //helper functions
 
     function pause(): void {
@@ -289,6 +267,63 @@ namespace hoc2023RedAgent {
     }
 }
 
+//%  block="HOC 2023 YellowAgent" weight=200 color=#b99b18 icon="\uf186"
+namespace hoc2023YellowAgent {
+    /**
+     * Move yellow Agent
+     */
+    //% block="yellow agent move %d by %n"
+    export function scene5_YellowAgent(d: FourDirectionArrows, n: number): void {
+        pause()
+        switch (d) {
+            case FourDirectionArrows.ArrowUpOrange:
+                player.execute("scoreboard players set .output global 21")
+                break;
+            case FourDirectionArrows.ArrowDownMagenta:
+                player.execute("scoreboard players set .output global 22")
+                break;
+            case FourDirectionArrows.ArrowRightYellow:
+                player.execute("scoreboard players set .output global 23")
+                break;
+            case FourDirectionArrows.ArrowLeftBlue:
+                player.execute("scoreboard players set .output global 24")
+                break;
+        }
+    }
+    function pause(): void {
+        loops.pause(communicationsTimeout)
+    }
+}
+
+//%  block="HOC 2023 BlueAgent" weight=200 color=#458cbe icon="\uf186"
+namespace hoc2023BlueAgent {
+    /**
+     * Move blue Agent
+     */
+    //% block="blue agent move %d by %n"
+    export function scene5_BlueAgent(d: FourDirectionArrows, n: number): void {
+        pause()
+        switch (d) {
+            case FourDirectionArrows.ArrowUpOrange:
+                player.execute("scoreboard players set .output global 31")
+                break;
+            case FourDirectionArrows.ArrowDownMagenta:
+                player.execute("scoreboard players set .output global 32")
+                break;
+            case FourDirectionArrows.ArrowRightYellow:
+                player.execute("scoreboard players set .output global 33")
+                break;
+            case FourDirectionArrows.ArrowLeftBlue:
+                player.execute("scoreboard players set .output global 34")
+                break;
+        }
+    }
+    function pause(): void {
+        loops.pause(communicationsTimeout)
+    }
+}
+
+
 //%  block="HOC 2023 Green Agent" weight=200 color=#357969 icon="\uf186"
 namespace hoc2023GreenAgent {
     /**
@@ -317,31 +352,5 @@ namespace hoc2023GreenAgent {
     }
 }
 
-//%  block="HOC 2023 YellowAgent" weight=200 color=#b99b18 icon="\uf186"
-namespace hoc2023YellowAgent {
-    /**
-     * Move yellow Agent
-     */
-    //% block="yellow agent move %d by %n"
-    export function scene5_YellowAgent(d: FourDirectionArrows, n: number): void {
-        pause()
-        switch (d) {
-            case FourDirectionArrows.ArrowUpOrange:
-                player.execute("scoreboard players set .output global 21")
-                break;
-            case FourDirectionArrows.ArrowDownMagenta:
-                player.execute("scoreboard players set .output global 22")
-                break;
-            case FourDirectionArrows.ArrowRightYellow:
-                player.execute("scoreboard players set .output global 23")
-                break;
-            case FourDirectionArrows.ArrowLeftBlue:
-                player.execute("scoreboard players set .output global 24")
-                break;
-        }
-    }
-    function pause(): void {
-        loops.pause(communicationsTimeout)
-    }
-}
+
 
