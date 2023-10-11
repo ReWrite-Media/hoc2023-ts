@@ -1,6 +1,6 @@
 {
     "name": "hoc2023-ts",
-    "version": "0.0.29",
+    "version": "0.0.30",
     "description": "",
     "dependencies": {
         "core": "*",
