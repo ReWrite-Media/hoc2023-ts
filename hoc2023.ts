@@ -119,18 +119,6 @@ namespace hoc2023 {
     }
 
     /**
-    * User admin permissions
-    */
-    //% block="%permission"
-    export function scene4_UserAdmin(permission: Scene4_UserLevel): boolean {
-        if (permission == Scene4_UserLevel.Admin) {
-            return false;
-        } else {
-            return true;
-        }
-    }
-
-    /**
      * Check user permissions
      */
     //% block="check user permissions"
@@ -317,6 +305,17 @@ namespace hoc2023BlueAgent {
             case FourDirectionArrows.ArrowLeftBlue:
                 player.execute("scoreboard players set .output global 34")
                 break;
+        }
+    }
+    /**
+    * User admin permissions
+    */
+    //% block="%permission"
+    export function scene4_UserAdmin(permission: Scene4_UserLevel): boolean {
+        if (permission == Scene4_UserLevel.Admin) {
+            return false;
+        } else {
+            return true;
         }
     }
     function pause(): void {
