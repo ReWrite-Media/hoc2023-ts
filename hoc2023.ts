@@ -226,23 +226,6 @@ namespace hoc2023 {
 
 }
 
-//%  block="HOC 2023 Objectives" weight=200 color=#7a2074 icon="\uf186"
-namespace hoc2023Objectives {
-    /**
-     * Scan for student
-     */
-    //% block="scan %scan_type"
-    export function scene1_Scan(scan_type: Scene1_Scan): void {
-        if (scan_type == Scene1_Scan.Smart) {
-            player.execute("scoreboard players set .output global 2")
-        } else {
-            player.execute("scoreboard players set .output global 1")
-        }
-
-    }
-
-}
-
 //%  block="HOC 2023 Red Agent" weight=200 color=#ad3a27 icon="\uf186"
 namespace hoc2023RedAgent {
     /**
@@ -266,6 +249,20 @@ namespace hoc2023RedAgent {
                 break;
         }
     }
+
+    /**
+     * Scan for student
+     */
+    //% block="scan %scan_type"
+    export function scene1_Scan(scan_type: Scene1_Scan): void {
+        if (scan_type == Scene1_Scan.Smart) {
+            player.execute("scoreboard players set .output global 2")
+        } else {
+            player.execute("scoreboard players set .output global 1")
+        }
+
+    }
+
     function pause(): void {
         loops.pause(communicationsTimeout)
     }
