@@ -68,22 +68,6 @@ namespace hoc2023 {
         player.execute("scoreboard players set .output global 4")
     }
     /**
-     * Cut grass without checking
-     */
-    //% block="cut grass"
-    export function scene2_GrassCut(): void {
-        pause()
-        player.execute("scoreboard players set .output global 1")
-    }
-    /**
-     * Check for sprinkler before cutting
-     */
-    //% block="cut grass if no sprinkler"
-    export function scene2_CheckSprinklerGrassCut(): void {
-        pause()
-        player.execute("scoreboard players set .output global 2")
-    }
-    /**
      * Move lawnmower to next row
      */
     //% block="start next row"
@@ -290,6 +274,22 @@ namespace hoc2023YellowAgent {
                 player.execute("scoreboard players set .output global 24")
                 break;
         }
+    }
+    /**
+     * Cut grass without checking
+     */
+    //% block="cut grass"
+    export function scene2_GrassCut(): void {
+        pause()
+        player.execute("scoreboard players set .output global 1")
+    }
+    /**
+     * Check for sprinkler before cutting
+     */
+    //% block="cut grass if no sprinkler"
+    export function scene2_CheckSprinklerGrassCut(): void {
+        pause()
+        player.execute("scoreboard players set .output global 2")
     }
     function pause(): void {
         loops.pause(communicationsTimeout)
