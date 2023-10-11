@@ -284,7 +284,7 @@ namespace hoc2023YellowAgent {
     }
 }
 
-//%  block="HOC 2023 BlueAgent" weight=200 color=#3473d8 icon="\uf186"
+//%  block="HOC 2023 BlueAgent" weight=200 color=#2e69c1 icon="\uf186"
 namespace hoc2023BlueAgent {
     /**
      * Move blue Agent
