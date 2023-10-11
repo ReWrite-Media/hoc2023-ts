@@ -33,7 +33,7 @@ enum Scene4_UserLevel {
 // global variables
 const communicationsTimeout = 100;
 
-//%  block="HOC 2023 Generics" weight=200 color=#888888 icon="\uf186"
+//%  block="HOC 2023 Generics" weight=200 color=#ad7935 icon="\uf186"
 namespace hoc2023 {
 
     /**
