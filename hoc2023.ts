@@ -198,7 +198,7 @@ namespace hoc2023 {
 
 }
 
-//%  block="HOC 2023 Objectives" weight=200 color=#dd9e00 icon="\uf186"
+//%  block="HOC 2023 Objectives" weight=200 color=#6ba6ff icon="\uf186"
 namespace hoc2023Objectives {
 
     /**
