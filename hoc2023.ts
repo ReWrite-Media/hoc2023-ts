@@ -33,7 +33,7 @@ enum Scene4_UserLevel {
 // global variables
 const communicationsTimeout = 100;
 
-//%  block="HOC 2023 Generics" weight=200 color=#ad7935 icon="\uf186"
+//%  block="HOC 2023 Generics" weight=200 color=#0b3d91 icon="\uf186"
 namespace hoc2023 {
 
     /**
@@ -198,6 +198,54 @@ namespace hoc2023 {
 
 }
 
+//%  block="HOC 2023 Objectives" weight=200 color=#dd9e00 icon="\uf186"
+namespace hoc2023Objectives {
+
+    /**
+     * Scan for student
+     */
+    //% block="scan %scan_type"
+    export function scene1_Scan(scan_type: Scene1_Scan): void {
+        if (scan_type == Scene1_Scan.Smart) {
+            player.execute("scoreboard players set .output global 2")
+        } else {
+            player.execute("scoreboard players set .output global 1")
+        }
+
+    }
+    /**
+     * Cut grass without checking
+     */
+    //% block="cut grass"
+    export function scene2_GrassCut(): void {
+        pause()
+        player.execute("scoreboard players set .output global 1")
+    }
+    /**
+     * Check for sprinkler before cutting
+     */
+    //% block="cut grass if no sprinkler"
+    export function scene2_CheckSprinklerGrassCut(): void {
+        pause()
+        player.execute("scoreboard players set .output global 2")
+    }
+    /**
+    * User admin permissions
+    */
+    //% block="%permission"
+    export function scene4_UserAdmin(permission: Scene4_UserLevel): boolean {
+        if (permission == Scene4_UserLevel.Admin) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    function pause(): void {
+        loops.pause(communicationsTimeout)
+    }
+
+}
+
 //%  block="HOC 2023 Red Agent" weight=200 color=#ad3a27 icon="\uf186"
 namespace hoc2023RedAgent {
     /**
@@ -221,20 +269,6 @@ namespace hoc2023RedAgent {
                 break;
         }
     }
-
-    /**
-     * Scan for student
-     */
-    //% block="scan %scan_type"
-    export function scene1_Scan(scan_type: Scene1_Scan): void {
-        if (scan_type == Scene1_Scan.Smart) {
-            player.execute("scoreboard players set .output global 2")
-        } else {
-            player.execute("scoreboard players set .output global 1")
-        }
-
-    }
-
     function pause(): void {
         loops.pause(communicationsTimeout)
     }
@@ -263,22 +297,6 @@ namespace hoc2023YellowAgent {
                 break;
         }
     }
-    /**
-     * Cut grass without checking
-     */
-    //% block="cut grass"
-    export function scene2_GrassCut(): void {
-        pause()
-        player.execute("scoreboard players set .output global 1")
-    }
-    /**
-     * Check for sprinkler before cutting
-     */
-    //% block="cut grass if no sprinkler"
-    export function scene2_CheckSprinklerGrassCut(): void {
-        pause()
-        player.execute("scoreboard players set .output global 2")
-    }
     function pause(): void {
         loops.pause(communicationsTimeout)
     }
@@ -305,17 +323,6 @@ namespace hoc2023BlueAgent {
             case FourDirectionArrows.ArrowLeftBlue:
                 player.execute("scoreboard players set .output global 34")
                 break;
-        }
-    }
-    /**
-    * User admin permissions
-    */
-    //% block="%permission"
-    export function scene4_UserAdmin(permission: Scene4_UserLevel): boolean {
-        if (permission == Scene4_UserLevel.Admin) {
-            return false;
-        } else {
-            return true;
         }
     }
     function pause(): void {
