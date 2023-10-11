@@ -324,4 +324,32 @@ namespace hoc2023 {
     function pause(): void {
         loops.pause(communicationsTimeout)
     }
+
+}
+
+namespace hoc2023RedAgent {
+    /**
+     * Move red Agent
+     */
+    //% block="red agent move %d by %n"
+    export function scene5_RedAgent(d: FourDirectionArrows, n: number): void {
+        pause()
+        switch (d) {
+            case FourDirectionArrows.ArrowUpOrange:
+                player.execute("scoreboard players set .output global 11")
+                break;
+            case FourDirectionArrows.ArrowDownMagenta:
+                player.execute("scoreboard players set .output global 12")
+                break;
+            case FourDirectionArrows.ArrowRightYellow:
+                player.execute("scoreboard players set .output global 13")
+                break;
+            case FourDirectionArrows.ArrowLeftBlue:
+                player.execute("scoreboard players set .output global 14")
+                break;
+        }
+    }
+    function pause(): void {
+        loops.pause(communicationsTimeout)
+    }
 }
