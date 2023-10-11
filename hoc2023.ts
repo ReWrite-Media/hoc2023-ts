@@ -14,6 +14,13 @@ enum FourDirectionArrows {
     ArrowLeftBlue = 983
 }
 
+enum UpDown {
+    //% block="up"
+    Up = SixDirection.Up,
+    //% block="down"
+    Down = SixDirection.Down
+}
+
 enum Scene1_Scan {
     //% block="horizontally"
     Horizontally = 1,
@@ -200,6 +207,38 @@ namespace hoc2023 {
 
 //%  block="HOC 2023 Objectives" weight=200 color=#6ba6ff icon="\uf186"
 namespace hoc2023Objectives {
+    /**
+     * Agent Move Forward
+     */
+    //% block="agent move `FourDirectionArrows.ArrowUpOrange`"
+    export function pillar_AgentForward(): void {
+        agent.move(FORWARD, 1)
+    }
+
+    /**
+     * Agent Move Up
+     */
+    //% block="agent move up"
+    export function pillar_AgentUp(): void {
+        agent.move(UP, 1)
+    }
+
+    /**
+     * Agent Move Down
+     */
+    //% block="agent move down"
+    export function pillar_AgentDown(): void {
+        agent.move(DOWN, 1)
+    }
+
+    /**
+     * Agent Place Block
+     */
+    //% block="agent move %d"
+    export function pillar_AgentPlaceBlock(d: UpDown): void {
+        agent.setItem(PINK_WOOL, 1, 1)
+        agent.place(d)
+    }
 
     /**
      * Scan for student
