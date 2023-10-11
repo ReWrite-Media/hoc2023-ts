@@ -51,7 +51,7 @@ enum Scene4_UserLevel {
 // global variables
 const communicationsTimeout = 100;
 
-//%  block="HOC 2023 Generics" weight=200 color=#0b3d91 icon="\uf186"
+//%  block="HOC 2023 Generics" weight=200 color=#005a68 icon="\uf186"
 namespace hoc2023 {
 
     /**
@@ -216,7 +216,7 @@ namespace hoc2023 {
 
 }
 
-//%  block="HOC 2023 Objectives" weight=200 color=#6ba6ff icon="\uf186"
+//%  block="HOC 2023 Objectives" weight=200 color=#6d682b icon="\uf186"
 namespace hoc2023Objectives {
     /**
      * Agent Move Direction
