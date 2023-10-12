@@ -282,6 +282,97 @@ namespace hoc2023Objectives {
 
 }
 
+//%  block="HOC 2023 Disabled" weight=200 color=#888888 icon="\uf186"
+namespace hoc2023Disable {
+    /**
+     * Search for garbage
+     */
+    //% block="search for garbage"
+    export function scene3_SearchForGarbage(): boolean {
+        return true;
+    }
+    /**
+     * Garbage
+     */
+    //% block="garbage"
+    export function scene3_Garbage(): boolean {
+        return true;
+    }
+    /**
+     * Battery
+     */
+    //% block="battery"
+    export function scene3_Battery(): number {
+        return 0;
+    }
+    /**
+     * Charging
+     */
+    //% block="charging"
+    export function scene3_Charging(): boolean {
+        return true;
+    }
+    /**
+     * Pickup Garbage
+     */
+    //% block="pickup garbage"
+    export function scene3_PickupGarbage(): void {
+        pause()
+        player.execute("scoreboard players set .output global 1")
+    }
+    /**
+     * Move Garbage
+     */
+    //% block="move garbage"
+    export function scene3_MoveGarbage(): void {
+        pause()
+        player.execute("scoreboard players set .output global 2")
+    }
+    /**
+     * Drop Garbage
+     */
+    //% block="drop garbage"
+    export function scene3_DropGarbage(): void {
+        pause()
+        player.execute("scoreboard players set .output global 3")
+    }
+    /**
+     * Find utility box
+     */
+    //% block="find utility box"
+    export function scene3_FindUtilityBox(): void {
+        pause()
+        player.execute("scoreboard players set .output global 4")
+    }
+    /**
+     * Start charging
+     */
+    //% block="start charging"
+    export function scene3_StartCharging(): void {
+        pause()
+        player.execute("scoreboard players set .output global 5")
+    }
+    /**
+     * Stop Charging
+     */
+    //% block="stop charging"
+    export function scene3_StopCharging(): void {
+        pause()
+        player.execute("scoreboard players set .output global 6")
+    }
+    /**
+     * Continue flight loop
+     */
+    //% block="continue flight loop"
+    export function scene3_ContinueFlightLoop(): void {
+        pause()
+        player.execute("scoreboard players set .output global 7")
+    }
+    function pause(): void {
+        loops.pause(communicationsTimeout)
+    }
+}
+
 //%  block="HOC 2023 Red Agent" weight=200 color=#ad3a27 icon="\uf186"
 namespace hoc2023RedAgent {
     /**
@@ -402,6 +493,3 @@ namespace hoc2023GreenAgent {
         loops.pause(communicationsTimeout)
     }
 }
-
-
-
