@@ -81,7 +81,7 @@ namespace hoc2023 {
     /**
      * Wait for next student
      */
-    //% block="wait for next student"
+    //% block="`custom.waitingClock` wait for next student"
     export function scene1_WaitStudent(): void {
         player.execute("scoreboard players set .output global 4")
     }
