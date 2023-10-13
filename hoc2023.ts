@@ -188,17 +188,17 @@ namespace hoc2023 {
         player.execute("scoreboard players set .output global 7")
     }
     /**
-     * Take to dumpster
+     * Fly to dumpster
      */
-    //% block="take to dumpster"
+    //% block="fly to dumpster"
     export function scene3_TakeToDumpster(): void {
         pause()
         player.execute("scoreboard players set .output global 8")
     }
     /**
-     * Recycle garbage
+     * Release garbage
      */
-    //% block="recycle garbage"
+    //% block="release garbage"
     export function scene3_RecycleGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 9")
@@ -381,17 +381,17 @@ namespace hoc2023Objectives {
         player.execute("scoreboard players set .output global 3")
     }
     /**
-     * Take to dumpster
+     * Fly to dumpster
      */
-    //% block="take to dumpster"
+    //% block="fly to dumpster"
     export function scene3_TakeToDumpster(): void {
         pause()
         player.execute("scoreboard players set .output global 8")
     }
     /**
-     * Recycle Garbage
+     * Release Garbage
      */
-    //% block="recycle garbage"
+    //% block="release garbage"
     export function scene3_RecycleGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 9")
@@ -538,25 +538,25 @@ namespace hoc2023Disable {
         player.execute("scoreboard players set .output global 7")
     }
     /**
-     * Take to dumpster
+     * Fly to dumpster
      */
-    //% block="take to dumpster"
+    //% block="fly to dumpster"
     export function scene3_TakeToDumpster(): void {
         pause()
         player.execute("scoreboard players set .output global 8")
     }
     /**
-     * Take to splonkers
+     * Fly to splonkers
      */
-    //% block="take to splonkers"
+    //% block="fly to splonkers"
     export function scene3_ObTakeToDumpster(): void {
         pause()
         player.execute("scoreboard players set .output global 8")
     }
     /**
-     * Recycle garbage
+     * Release garbage
      */
-    //% block="recycle garbage"
+    //% block="release garbage"
     export function scene3_RecycleGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 9")
