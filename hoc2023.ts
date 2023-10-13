@@ -320,7 +320,7 @@ namespace hoc2023Objectives {
     /**
      * Agent Move Direction
      */
-    //% block="agent move %d"
+    //% block="`custom.agentMove` agent move %d"
     export function pillar_AgentMove(d: ForwardBackUpDown): void {
         agent.move(d, 1)
     }
@@ -329,7 +329,7 @@ namespace hoc2023Objectives {
     /**
      * Agent Place Block
      */
-    //% block="agent place `block.PinkWool` %d"
+    //% block="`custom.place` agent place `block.PinkWool` %d"
     export function pillar_AgentPlacePinkWoolBlock(d: UpDown): void {
         agent.setItem(PURPLE_WOOL, 1, 1)
         agent.setSlot(1)
