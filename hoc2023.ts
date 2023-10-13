@@ -129,7 +129,7 @@ namespace hoc2023 {
      */
     //% block="charging"
     export function scene3_Charging(): boolean {
-        return true;
+        return false;
     }
     /**
      * Pickup garbage
@@ -455,7 +455,7 @@ namespace hoc2023Disable {
      */
     //% block="charging"
     export function scene3_Charging(): boolean {
-        return true;
+        return false;
     }
     /**
      * Pickup garbage
