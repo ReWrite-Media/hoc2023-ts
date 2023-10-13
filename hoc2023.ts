@@ -266,53 +266,6 @@ namespace hoc2023Objectives {
         player.execute("scoreboard players set .output global 2")
     }
     /**
-    * User admin permissions
-    */
-    //% block="%permission"
-    export function scene4_UserAdmin(permission: Scene4_UserLevel): boolean {
-        if (permission == Scene4_UserLevel.Admin) {
-            return false;
-        } else {
-            return true;
-        }
-    }
-    function pause(): void {
-        loops.pause(communicationsTimeout)
-    }
-
-}
-
-//%  block="HOC 2023 Disabled" weight=200 color=#888888 icon="\uf186"
-namespace hoc2023Disable {
-    /**
-     * Search for garbage
-     */
-    //% block="search for garbage"
-    export function scene3_SearchForGarbage(): boolean {
-        return true;
-    }
-    /**
-     * Garbage
-     */
-    //% block="garbage"
-    export function scene3_Garbage(): boolean {
-        return true;
-    }
-    /**
-     * Battery
-     */
-    //% block="battery"
-    export function scene3_Battery(): number {
-        return 0;
-    }
-    /**
-     * Charging
-     */
-    //% block="charging"
-    export function scene3_Charging(): boolean {
-        return true;
-    }
-    /**
      * Pickup Garbage
      */
     //% block="pickup garbage"
@@ -332,6 +285,93 @@ namespace hoc2023Disable {
      * Drop Garbage
      */
     //% block="drop garbage"
+    export function scene3_DropGarbage(): void {
+        pause()
+        player.execute("scoreboard players set .output global 3")
+    }
+    /**
+     * Take to dumpster
+     */
+    //% block="take to dumpster"
+    export function scene3_TakeToDumpster(): void {
+        pause()
+        player.execute("scoreboard players set .output global 8")
+    }
+    /**
+     * Recycle Garbage
+     */
+    //% block="recycle garbage"
+    export function scene3_RecycleGarbage(): void {
+        pause()
+        player.execute("scoreboard players set .output global 9")
+    }
+    /**
+    * User admin permissions
+    */
+    //% block="%permission"
+    export function scene4_UserAdmin(permission: Scene4_UserLevel): boolean {
+        if (permission == Scene4_UserLevel.Admin) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    function pause(): void {
+        loops.pause(communicationsTimeout)
+    }
+
+}
+
+//%  block="HOC 2023 Disabled" weight=200 color=#888888 icon="\uf186"
+namespace hoc2023Disable {
+    /**
+     * Search for Warble
+     */
+    //% block="search for warble"
+    export function scene3_SearchForGarbage(): boolean {
+        return true;
+    }
+    /**
+     * Warble
+     */
+    //% block="warble"
+    export function scene3_Garbage(): boolean {
+        return true;
+    }
+    /**
+     * Battery
+     */
+    //% block="battery"
+    export function scene3_Battery(): number {
+        return 0;
+    }
+    /**
+     * Charging
+     */
+    //% block="charging"
+    export function scene3_Charging(): boolean {
+        return true;
+    }
+    /**
+     * Pickup Warble
+     */
+    //% block="pickup warble"
+    export function scene3_PickupGarbage(): void {
+        pause()
+        player.execute("scoreboard players set .output global 1")
+    }
+    /**
+     * Move Warble
+     */
+    //% block="move warble"
+    export function scene3_MoveGarbage(): void {
+        pause()
+        player.execute("scoreboard players set .output global 2")
+    }
+    /**
+     * Drop Warble
+     */
+    //% block="drop warble"
     export function scene3_DropGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 3")
@@ -367,6 +407,22 @@ namespace hoc2023Disable {
     export function scene3_ContinueFlightLoop(): void {
         pause()
         player.execute("scoreboard players set .output global 7")
+    }
+    /**
+     * Take to splonkers
+     */
+    //% block="take to splonkers"
+    export function scene3_TakeToDumpster(): void {
+        pause()
+        player.execute("scoreboard players set .output global 8")
+    }
+    /**
+     * Fluffen warble
+     */
+    //% block="fluffen warble"
+    export function scene3_RecycleGarbage(): void {
+        pause()
+        player.execute("scoreboard players set .output global 9")
     }
     function pause(): void {
         loops.pause(communicationsTimeout)
