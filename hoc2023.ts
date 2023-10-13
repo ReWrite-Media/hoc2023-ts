@@ -247,7 +247,7 @@ namespace hoc2023 {
     /**
      * Enable log viewing
      */
-    //% block="enable log viewing"
+    //% block="`custom.greenCheck` enable log viewing"
     export function scene4_EnableLogViewing(): void {
         pause()
         player.execute("scoreboard players set .output global 1")
@@ -256,7 +256,7 @@ namespace hoc2023 {
     /**
      * Disable log viewing
      */
-    //% block="disable log viewing"
+    //% block="`custom.redX` disable log viewing"
     export function scene4_DisableLogViewing(): void {
         pause()
         player.execute("scoreboard players set .output global 2")
@@ -265,7 +265,7 @@ namespace hoc2023 {
     /**
      * Log unauthorized event
      */
-    //% block="log unauthorized event"
+    //% block="`custom.redX` log unauthorized event"
     export function scene4_LogUnauthorizedEvent(): void {
         pause()
         player.execute("scoreboard players set .output global 5")
@@ -274,7 +274,7 @@ namespace hoc2023 {
     /**
      * Log authorized event
      */
-    //% block="log authorized event"
+    //% block="`custom.greenCheck` log authorized event"
     export function scene4_LogAuthorizedEvent(): void {
         pause()
         player.execute("scoreboard players set .output global 5")
@@ -301,7 +301,7 @@ namespace hoc2023 {
     /**
      * Wait before locking
      */
-    //% block="wait %num minutes"
+    //% block="`custom.waitingClock` wait %num minutes"
     export function scene4_WaitMinutes(num: number): void {
         pause()
         player.execute("scoreboard players set .output global 6")
@@ -579,7 +579,7 @@ namespace hoc2023RedAgent {
     /**
      * Move red Agent
      */
-    //% block="red agent move %d by %n"
+    //% block="`custom.redAgent` red agent move %d by %n"
     export function scene5_RedAgent(d: FourDirectionArrows, n: number): void {
         for (let i = 0; i < n; i++) {
             pause()
@@ -609,7 +609,7 @@ namespace hoc2023YellowAgent {
     /**
      * Move yellow Agent
      */
-    //% block="yellow agent move %d by %n"
+    //% block="`custom.yellowAgent` yellow agent move %d by %n"
     export function scene5_YellowAgent(d: FourDirectionArrows, n: number): void {
         for (let i = 0; i < n; i++) {
             pause()
@@ -639,7 +639,7 @@ namespace hoc2023BlueAgent {
     /**
      * Move blue Agent
      */
-    //% block="blue agent move %d by %n"
+    //% block="`custom.blueAgent` blue agent move %d by %n"
     export function scene5_BlueAgent(d: FourDirectionArrows, n: number): void {
         for (let i = 0; i < n; i++) {
             pause()
