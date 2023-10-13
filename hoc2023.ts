@@ -65,7 +65,7 @@ namespace hoc2023 {
     /**
      * Detect Student
      */
-    //% block="student found"
+    //% block="`custom.studentFound` student found"
     export function scene1_DetectStudent(): boolean {
         return true;
     }
@@ -73,7 +73,7 @@ namespace hoc2023 {
     /**
      * Serve Lunch
      */
-    //% block="serve lunch"
+    //% block="`custom.serveLunch` serve lunch"
     export function scene1_ServeLunch(): void {
         player.execute("scoreboard players set .output global 3")
     }
@@ -88,7 +88,7 @@ namespace hoc2023 {
     /**
      * Move lawnmower to next row
      */
-    //% block="start next row"
+    //% block="`custom.lawnmowerNewRow` start next row"
     export function scene2_LawnmowerNextRow(): void {
         pause()
         player.execute("scoreboard players set .output global 3")
@@ -98,7 +98,7 @@ namespace hoc2023 {
     /**
      * Move lawnmower forward
      */
-    //% block="move lawnmower forward"
+    //% block="`custom.lawnmowerForward` move lawnmower forward"
     export function scene2_LawnmowerMoveForward(): void {
         pause()
         player.execute("scoreboard players set .output global 3")
@@ -339,7 +339,7 @@ namespace hoc2023Objectives {
     /**
      * Scan for student
      */
-    //% block="scan %scan_type"
+    //% block="`custom.scanning` scan %scan_type"
     export function scene1_Scan(scan_type: Scene1_Scan): void {
         if (scan_type == Scene1_Scan.Smart) {
             player.execute("scoreboard players set .output global 2")
@@ -351,7 +351,7 @@ namespace hoc2023Objectives {
     /**
      * Cut grass without checking
      */
-    //% block="cut grass"
+    //% block="`custom.cutGrass` cut grass"
     export function scene2_GrassCut(): void {
         pause()
         player.execute("scoreboard players set .output global 1")
@@ -359,7 +359,7 @@ namespace hoc2023Objectives {
     /**
      * Check for sprinkler before cutting
      */
-    //% block="cut grass if no sprinkler"
+    //% block="`custom.cutgrassNoSprinkler` cut grass if no sprinkler"
     export function scene2_CheckSprinklerGrassCut(): void {
         pause()
         player.execute("scoreboard players set .output global 2")
