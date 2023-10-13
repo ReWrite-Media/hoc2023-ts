@@ -670,7 +670,7 @@ namespace hoc2023GreenAgent {
     /**
      * Move green Agent
      */
-    //% block="green agent move %d by %n"
+    //% block="`custom.greenAgent` green agent move %d by %n"
     export function scene5_GreenAgent(d: FourDirectionArrows, n: number): void {
         for (let i = 0; i < n; i++) {
             pause()

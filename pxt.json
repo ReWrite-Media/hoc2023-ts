@@ -10,7 +10,8 @@
         "README.md",
         "hoc2023.ts",
         "FourDirectionArrows.jres",
-        "tutorial-info-cache.json"
+        "tutorial-info-cache.json",
+        "custom.jres"
     ],
     "testFiles": [],
     "public": true,
