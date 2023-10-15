@@ -196,9 +196,9 @@ namespace hoc2023 {
         player.execute("scoreboard players set .output global 8")
     }
     /**
-     * Release trash
+     * Recycle trash
      */
-    //% block="release trash"
+    //% block="recycle trash"
     export function scene3_RecycleGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 9")
@@ -389,9 +389,9 @@ namespace hoc2023Objectives {
         player.execute("scoreboard players set .output global 8")
     }
     /**
-     * Release trash
+     * Recycle trash
      */
-    //% block="release trash"
+    //% block="recycle trash"
     export function scene3_RecycleGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 9")
@@ -554,9 +554,9 @@ namespace hoc2023Disable {
         player.execute("scoreboard players set .output global 8")
     }
     /**
-     * Release trash
+     * Recycle trash
      */
-    //% block="release trash"
+    //% block="recycle trash"
     export function scene3_RecycleGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 9")
