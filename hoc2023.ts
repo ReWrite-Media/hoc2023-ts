@@ -15,17 +15,17 @@ enum FourDirectionArrows {
 }
 
 enum PrinceBadges {
-    //% blockIdentity="blocks.custom" enumval=986 block="Arrow Up Orange"
-    //% jres alias=ARROW_UP_ORANGE
+    //% blockIdentity="blocks.custom" enumval=986 block="Fairness and Inclusiveness"
+    //% jres alias=FAIRNESS_INCLUSIVENESS
     FairnessInclusiveness = 986,
-    //% blockIdentity="blocks.custom" enumval=985 block="Arrow Down Magenta"
-    //% jres alias=ARROW_DOWN_MAGENTA
+    //% blockIdentity="blocks.custom" enumval=985 block="Privacy and Security"
+    //% jres alias=PRIVACY_SECURITY
     PrivacySecurity = 985,
-    //% blockIdentity="blocks.custom" enumval=984 block="Arrow Right Yellow"
-    //% jres alias=ARROW_RIGHT_YELLOW
+    //% blockIdentity="blocks.custom" enumval=984 block="Reliability and Safety"
+    //% jres alias=RELIABILITY_SAFETY
     ReliabilitySafety = 984,
-    //% blockIdentity="blocks.custom" enumval=983 block="Arrow Left Blue"
-    //% jres alias=ARROW_LEFT_BLUE
+    //% blockIdentity="blocks.custom" enumval=983 block="Transparency and Accountability"
+    //% jres alias=TRANSPARENCE_ACCOUNTABILITY
     TransparencyAccountability = 983
 }
 
