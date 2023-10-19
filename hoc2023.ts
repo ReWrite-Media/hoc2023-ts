@@ -618,7 +618,7 @@ namespace hoc2023RedAgent {
      * Match red Agent
      */
     //% block="`custom.redAgent` red agent match %p"
-    export function scene5_RedMatchAgent(p: PrinceBadges, n: number): void {
+    export function scene5_RedMatchAgent(p: PrinceBadges): void {
         pause()
         switch (p) {
             case PrinceBadges.FairnessInclusiveness:
@@ -669,7 +669,7 @@ namespace hoc2023YellowAgent {
      * Match yellow Agent
      */
     //% block="`custom.yellowAgent` yellow agent match %p"
-    export function scene5_YellowMatchAgent(p: PrinceBadges, n: number): void {
+    export function scene5_YellowMatchAgent(p: PrinceBadges): void {
         pause()
         switch (p) {
             case PrinceBadges.FairnessInclusiveness:
@@ -720,7 +720,7 @@ namespace hoc2023BlueAgent {
      * Match blue Agent
      */
     //% block="`custom.blueAgent` blue agent match %p"
-    export function scene5_BlueMatchAgent(p: PrinceBadges, n: number): void {
+    export function scene5_BlueMatchAgent(p: PrinceBadges): void {
         pause()
         switch (p) {
             case PrinceBadges.FairnessInclusiveness:
@@ -772,7 +772,7 @@ namespace hoc2023GreenAgent {
      * Match green Agent
      */
     //% block="`custom.greenAgent` green agent match %p"
-    export function scene5_GreenMatchAgent(p: PrinceBadges, n: number): void {
+    export function scene5_GreenMatchAgent(p: PrinceBadges): void {
         pause()
         switch (p) {
             case PrinceBadges.FairnessInclusiveness:
