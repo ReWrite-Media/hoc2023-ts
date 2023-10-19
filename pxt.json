@@ -11,7 +11,8 @@
         "hoc2023.ts",
         "FourDirectionArrows.jres",
         "tutorial-info-cache.json",
-        "custom.jres"
+        "custom.jres",
+        "PrinceBadges.jres"
     ],
     "testFiles": [],
     "public": true,

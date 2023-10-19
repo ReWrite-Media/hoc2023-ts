@@ -14,6 +14,21 @@ enum FourDirectionArrows {
     ArrowLeftBlue = 983
 }
 
+enum PrinceBadges {
+    //% blockIdentity="blocks.custom" enumval=986 block="Arrow Up Orange"
+    //% jres alias=ARROW_UP_ORANGE
+    FairnessInclusiveness = 986,
+    //% blockIdentity="blocks.custom" enumval=985 block="Arrow Down Magenta"
+    //% jres alias=ARROW_DOWN_MAGENTA
+    PrivacySecurity = 985,
+    //% blockIdentity="blocks.custom" enumval=984 block="Arrow Right Yellow"
+    //% jres alias=ARROW_RIGHT_YELLOW
+    ReliabilitySafety = 984,
+    //% blockIdentity="blocks.custom" enumval=983 block="Arrow Left Blue"
+    //% jres alias=ARROW_LEFT_BLUE
+    TransparencyAccountability = 983
+}
+
 enum UpDown {
     //% block="up"
     Up = SixDirection.Up,
@@ -599,6 +614,27 @@ namespace hoc2023RedAgent {
             }
         }
     }
+    /**
+     * Match red Agent
+     */
+    //% block="`custom.redAgent` red agent match %p"
+    export function scene5_RedMatchAgent(p: PrinceBadges, n: number): void {
+        pause()
+        switch (p) {
+            case PrinceBadges.FairnessInclusiveness:
+                player.execute("scoreboard players set .output global 11")
+                break;
+            case PrinceBadges.PrivacySecurity:
+                player.execute("scoreboard players set .output global 14")
+                break;
+            case PrinceBadges.ReliabilitySafety:
+                player.execute("scoreboard players set .output global 12")
+                break;
+            case PrinceBadges.TransparencyAccountability:
+                player.execute("scoreboard players set .output global 13")
+                break;
+        }
+    }
     function pause(): void {
         loops.pause(communicationsTimeout)
     }
@@ -627,6 +663,27 @@ namespace hoc2023YellowAgent {
                     player.execute("scoreboard players set .output global 24")
                     break;
             }
+        }
+    }
+    /**
+     * Match yellow Agent
+     */
+    //% block="`custom.yellowAgent` yellow agent match %p"
+    export function scene5_YellowMatchAgent(p: PrinceBadges, n: number): void {
+        pause()
+        switch (p) {
+            case PrinceBadges.FairnessInclusiveness:
+                player.execute("scoreboard players set .output global 22")
+                break;
+            case PrinceBadges.PrivacySecurity:
+                player.execute("scoreboard players set .output global 24")
+                break;
+            case PrinceBadges.ReliabilitySafety:
+                player.execute("scoreboard players set .output global 21")
+                break;
+            case PrinceBadges.TransparencyAccountability:
+                player.execute("scoreboard players set .output global 23")
+                break;
         }
     }
     function pause(): void {
@@ -659,6 +716,27 @@ namespace hoc2023BlueAgent {
             }
         }
     }
+    /**
+     * Match blue Agent
+     */
+    //% block="`custom.blueAgent` blue agent match %p"
+    export function scene5_BlueMatchAgent(p: PrinceBadges, n: number): void {
+        pause()
+        switch (p) {
+            case PrinceBadges.FairnessInclusiveness:
+                player.execute("scoreboard players set .output global 32")
+                break;
+            case PrinceBadges.PrivacySecurity:
+                player.execute("scoreboard players set .output global 34")
+                break;
+            case PrinceBadges.ReliabilitySafety:
+                player.execute("scoreboard players set .output global 33")
+                break;
+            case PrinceBadges.TransparencyAccountability:
+                player.execute("scoreboard players set .output global 31")
+                break;
+        }
+    }
     function pause(): void {
         loops.pause(communicationsTimeout)
     }
@@ -688,6 +766,27 @@ namespace hoc2023GreenAgent {
                     player.execute("scoreboard players set .output global 44")
                     break;
             }
+        }
+    }
+    /**
+     * Match green Agent
+     */
+    //% block="`custom.greenAgent` green agent match %p"
+    export function scene5_GreenMatchAgent(p: PrinceBadges, n: number): void {
+        pause()
+        switch (p) {
+            case PrinceBadges.FairnessInclusiveness:
+                player.execute("scoreboard players set .output global 42")
+                break;
+            case PrinceBadges.PrivacySecurity:
+                player.execute("scoreboard players set .output global 41")
+                break;
+            case PrinceBadges.ReliabilitySafety:
+                player.execute("scoreboard players set .output global 43")
+                break;
+            case PrinceBadges.TransparencyAccountability:
+                player.execute("scoreboard players set .output global 44")
+                break;
         }
     }
     function pause(): void {
