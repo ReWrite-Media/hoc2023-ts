@@ -438,9 +438,9 @@ namespace hoc2023Disable {
         return true;
     }
     /**
-     * Search for Warble
+     * Search for 101101
      */
-    //% block="search for warble"
+    //% block="search for 101101"
     export function scene3_ObSearchForGarbage(): boolean {
         return true;
     }
@@ -452,9 +452,9 @@ namespace hoc2023Disable {
         return true;
     }
     /**
-     * Warble
+     * 101101
      */
-    //% block="warble"
+    //% block="101101"
     export function scene3_ObGarbage(): boolean {
         return true;
     }
@@ -481,9 +481,9 @@ namespace hoc2023Disable {
         player.execute("scoreboard players set .output global 1")
     }
     /**
-     * Pickup warble
+     * Pickup 101101
      */
-    //% block="pickup warble"
+    //% block="pickup 101101"
     export function scene3_ObPickupGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 1")
@@ -497,9 +497,9 @@ namespace hoc2023Disable {
         player.execute("scoreboard players set .output global 2")
     }
     /**
-     * Move warble
+     * Move 101101
      */
-    //% block="move warble"
+    //% block="move 101101"
     export function scene3_ObMoveGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 2")
@@ -513,9 +513,9 @@ namespace hoc2023Disable {
         player.execute("scoreboard players set .output global 3")
     }
     /**
-     * Drop warble
+     * Drop 101101
      */
-    //% block="drop warble"
+    //% block="drop 101101"
     export function scene3_ObDropGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 3")
@@ -561,9 +561,9 @@ namespace hoc2023Disable {
         player.execute("scoreboard players set .output global 8")
     }
     /**
-     * Fly to splonkers
+     * Fly to 0110101011
      */
-    //% block="fly to splonkers"
+    //% block="fly to 0110101011"
     export function scene3_ObTakeToDumpster(): void {
         pause()
         player.execute("scoreboard players set .output global 8")
@@ -577,9 +577,9 @@ namespace hoc2023Disable {
         player.execute("scoreboard players set .output global 9")
     }
     /**
-     * Fluffen warble
+     * 1001010 101101
      */
-    //% block="fluffen warble"
+    //% block="1001010 101101"
     export function scene3_ObRecycleGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 9")
