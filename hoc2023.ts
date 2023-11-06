@@ -168,7 +168,7 @@ namespace hoc2023 {
     //% block="drop trash"
     export function scene3_DropGarbage(): void {
         pause()
-        player.execute("scoreboard players set .output global 3")
+        player.execute("scoreboard players set .output global 0")
     }
     /**
      * Find utility box
@@ -176,7 +176,7 @@ namespace hoc2023 {
     //% block="find utility box"
     export function scene3_FindUtilityBox(): void {
         pause()
-        player.execute("scoreboard players set .output global 4")
+        player.execute("scoreboard players set .output global 0")
     }
     /**
      * Start charging
@@ -184,7 +184,7 @@ namespace hoc2023 {
     //% block="start charging"
     export function scene3_StartCharging(): void {
         pause()
-        player.execute("scoreboard players set .output global 5")
+        player.execute("scoreboard players set .output global 0")
     }
     /**
      * Stop Charging
@@ -192,7 +192,7 @@ namespace hoc2023 {
     //% block="stop charging"
     export function scene3_StopCharging(): void {
         pause()
-        player.execute("scoreboard players set .output global 6")
+        player.execute("scoreboard players set .output global 0")
     }
     /**
      * Continue flight loop
@@ -217,6 +217,10 @@ namespace hoc2023 {
     export function scene3_RecycleGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 9")
+        pause()
+        player.execute("scoreboard players set .output global 4")
+        pause()
+        player.execute("scoreboard players set .output global 5")
     }
     /**
      * Checks for human detection
@@ -409,7 +413,7 @@ namespace hoc2023Objectives {
     //% block="drop trash"
     export function scene3_DropGarbage(): void {
         pause()
-        player.execute("scoreboard players set .output global 3")
+        player.execute("scoreboard players set .output global 0")
     }
     /**
      * Fly to dumpster
@@ -426,6 +430,10 @@ namespace hoc2023Objectives {
     export function scene3_RecycleGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 9")
+        pause()
+        player.execute("scoreboard players set .output global 4")
+        pause()
+        player.execute("scoreboard players set .output global 5")
     }
     /**
     * User admin permissions
@@ -526,7 +534,7 @@ namespace hoc2023Disable {
     //% block="drop trash"
     export function scene3_DropGarbage(): void {
         pause()
-        player.execute("scoreboard players set .output global 3")
+        player.execute("scoreboard players set .output global 0")
     }
     /**
      * Drop 101101
@@ -534,7 +542,7 @@ namespace hoc2023Disable {
     //% block="drop 101101"
     export function scene3_ObDropGarbage(): void {
         pause()
-        player.execute("scoreboard players set .output global 3")
+        player.execute("scoreboard players set .output global 0")
     }
     /**
      * Find utility box
@@ -542,7 +550,7 @@ namespace hoc2023Disable {
     //% block="find utility box"
     export function scene3_FindUtilityBox(): void {
         pause()
-        player.execute("scoreboard players set .output global 4")
+        player.execute("scoreboard players set .output global 0")
     }
     /**
      * Start charging
@@ -550,7 +558,7 @@ namespace hoc2023Disable {
     //% block="start charging"
     export function scene3_StartCharging(): void {
         pause()
-        player.execute("scoreboard players set .output global 5")
+        player.execute("scoreboard players set .output global 0")
     }
     /**
      * Stop Charging
@@ -558,7 +566,7 @@ namespace hoc2023Disable {
     //% block="stop charging"
     export function scene3_StopCharging(): void {
         pause()
-        player.execute("scoreboard players set .output global 6")
+        player.execute("scoreboard players set .output global 0")
     }
     /**
      * Continue flight loop
@@ -591,6 +599,10 @@ namespace hoc2023Disable {
     export function scene3_RecycleGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 9")
+        pause()
+        player.execute("scoreboard players set .output global 4")
+        pause()
+        player.execute("scoreboard players set .output global 5")
     }
     /**
      * 1001010 101101
@@ -599,6 +611,10 @@ namespace hoc2023Disable {
     export function scene3_ObRecycleGarbage(): void {
         pause()
         player.execute("scoreboard players set .output global 9")
+        pause()
+        player.execute("scoreboard players set .output global 4")
+        pause()
+        player.execute("scoreboard players set .output global 5")
     }
     function pause(): void {
         loops.pause(communicationsTimeout)
