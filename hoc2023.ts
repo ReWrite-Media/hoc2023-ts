@@ -266,6 +266,14 @@ namespace hoc2023 {
     export function scene4_EnableLogViewing(): void {
         pause()
         player.execute("scoreboard players set .output global 1")
+        pause()
+        player.execute("scoreboard players set .output global 4")
+        pause()
+        player.execute("scoreboard players set .output global 5")
+        pause()
+        player.execute("scoreboard players set .output global 6")
+        pause()
+        player.execute("scoreboard players set .output global 7")
     }
 
     /**
@@ -275,6 +283,14 @@ namespace hoc2023 {
     export function scene4_DisableLogViewing(): void {
         pause()
         player.execute("scoreboard players set .output global 2")
+        pause()
+        player.execute("scoreboard players set .output global 4")
+        pause()
+        player.execute("scoreboard players set .output global 5")
+        pause()
+        player.execute("scoreboard players set .output global 6")
+        pause()
+        player.execute("scoreboard players set .output global 7")
     }
 
     /**
@@ -283,7 +299,7 @@ namespace hoc2023 {
     //% block="`custom.redX` log unauthorized event"
     export function scene4_LogUnauthorizedEvent(): void {
         pause()
-        player.execute("scoreboard players set .output global 5")
+        player.execute("scoreboard players set .output global 0")
     }
 
     /**
@@ -292,7 +308,7 @@ namespace hoc2023 {
     //% block="`custom.greenCheck` log authorized event"
     export function scene4_LogAuthorizedEvent(): void {
         pause()
-        player.execute("scoreboard players set .output global 5")
+        player.execute("scoreboard players set .output global 0")
     }
 
     /**
@@ -301,7 +317,7 @@ namespace hoc2023 {
     //% block="lock door"
     export function scene4_LockDoor(): void {
         pause()
-        player.execute("scoreboard players set .output global 7")
+        player.execute("scoreboard players set .output global 0")
     }
 
     /**
@@ -310,7 +326,7 @@ namespace hoc2023 {
     //% block="unlock door"
     export function scene4_UnlockDoor(): void {
         pause()
-        player.execute("scoreboard players set .output global 4")
+        player.execute("scoreboard players set .output global 0")
     }
 
     /**
@@ -319,7 +335,7 @@ namespace hoc2023 {
     //% block="`custom.waitingClock` wait %num minutes"
     export function scene4_WaitMinutes(num: number): void {
         pause()
-        player.execute("scoreboard players set .output global 6")
+        player.execute("scoreboard players set .output global 0")
     }
 
     //helper functions
@@ -782,10 +798,10 @@ namespace hoc2023GreenAgent {
                 player.execute("scoreboard players set .output global 41")
                 break;
             case PrinceBadges.ReliabilitySafety:
-                player.execute("scoreboard players set .output global 43")
+                player.execute("scoreboard players set .output global 44")
                 break;
             case PrinceBadges.TransparencyAccountability:
-                player.execute("scoreboard players set .output global 44")
+                player.execute("scoreboard players set .output global 43")
                 break;
         }
     }
