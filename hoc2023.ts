@@ -394,7 +394,7 @@ namespace hoc2023Objectives {
     /**
      * Check for sprinkler before cutting
      */
-    //% block="`custom.cutgrassNoSprinkler` cut grass if no sprinkler"
+    //% block="`custom.cutgrassNoSprinkler` if no sprinkler cut grass"
     export function scene2_CheckSprinklerGrassCut(): void {
         pause()
         player.execute("scoreboard players set .output global 2")
